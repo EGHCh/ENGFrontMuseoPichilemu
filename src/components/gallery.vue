@@ -6,7 +6,9 @@
     <div
       class="gallery__selector fixed-left gallery__selector--desktop gallery__selector--left d-flex flex-column mx-auto"
     >
-      <a @click="getChoice(`2`)" value="2" class="text-center mb-1 mb-sm-0">A</a>
+      <a @click="getChoice(`2`)" value="2" class="text-center mb-1 mb-sm-0"
+        >A</a
+      >
       <a @click="getChoice(`17`)" class="text-center mb-1 mb-sm-0">B</a>
       <a @click="getChoice(``)" class="text-center mb-1 mb-sm-0">C</a>
       <a @click="getChoice(`66`)" class="text-center mb-1 mb-sm-0">D</a>
@@ -21,18 +23,28 @@
       <a @click="getChoice(`124`)" class="text-center mb-1 mb-sm-0">LL</a>
       <a @click="getChoice(`129`)" class="text-center mb-1 mb-sm-0">M</a>
     </div>
-    <div
-      @wheel="riseIndex"
-      class="gallery__display container gallery__grid ms-3 ms-sm-auto"
-    >
-      <CardTemplate
+    <div @wheel="riseIndex" class="gallery__display container ms-3 ms-sm-auto">
+      <div class="d-flex flex-column">
+        <h2 class="mx-auto">
+          Sorry, but www.museopichilemuonline.cl still under construction...
+        </h2>
+        <img src="../assets/under.png" alt="" class="under-construction mx-auto" />
+        <h3 class="mx-auto">
+          Please visit
+          <a href="https://sage-medovik-c91ddb.netlify.app/"
+            >www.museopichilemuonline.cl</a
+          >
+        </h3>
+      </div>
+
+      <!-- <CardTemplate
         v-for="(post, index) in posts"
         :key="index"
         :cardTitle="post.title.rendered"
         :cardBody="post.contenido"
         :picture_src="post.imagen"
         @click="getPost(post)"
-      ></CardTemplate>
+      ></CardTemplate> -->
     </div>
     <div
       class="gallery__selector gallery__selector--desktop gallery__selector--right d-flex flex-column mb-auto mt-auto"
@@ -56,7 +68,7 @@
 </template>
 
 <script>
-import CardTemplate from "./card.vue";
+// import CardTemplate from "./card.vue";
 import EditorialSection from "./editorialSection.vue";
 export default {
   name: "Gallery-section",
@@ -66,7 +78,7 @@ export default {
     };
   },
   components: {
-    CardTemplate,
+    // CardTemplate,
     EditorialSection,
   },
   props: {
@@ -90,6 +102,9 @@ export default {
 <style>
 CardTemplate {
   margin-bottom: 1rem;
+}
+.under-construction {
+  max-width: 150px;
 }
 .editorial-for-mobile {
   background-image: url(https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);

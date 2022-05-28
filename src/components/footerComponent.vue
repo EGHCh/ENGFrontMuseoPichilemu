@@ -4,7 +4,7 @@
   >
     <div class="col-11 d-flex">
       <p class="fs-6">
-        Una produccion de
+        Powered by 
         <a
           class="footer__link fs-6"
           href="http://www.pichilemunews.cl/"

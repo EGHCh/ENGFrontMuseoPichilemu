@@ -13,7 +13,7 @@
       @click="openModalPatrimonio"
       class="col-6 col-sm-5 text-center editorial-links__link"
     >
-      Qué entendemos por patrimonio cultural
+      What do we Understand by Cultural Patrimony
     </button>
   </section>
 </template>

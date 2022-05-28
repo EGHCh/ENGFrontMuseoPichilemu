@@ -3,7 +3,8 @@
     <div class="modal-container py-4 px-2">
       <h3 class="modal-title">EDITORIAL</h3>
       <hr />
-      <p class="pb-4 px-sm-4">
+      <h3>Sorry, but www.museopichilemuonline.cl still under construction...</h3>
+      <!-- <p class="pb-4 px-sm-4">
         Un museo (del latín, musēum y este, a su vez, del griego, Μουσείον) es
         una institución pública o privada, permanente, con o sin fines de lucro,
         al servicio de la sociedad y de su desarrollo, y abierta al público, que
@@ -43,7 +44,7 @@
         periódica Museum mediante la cual se difunden hasta hoy en día las
         actividades de los museos en el mundo. (Fuente: Párrafos de la
         descripción de Wikipedia..).
-      </p>
+      </p> -->
       <button class="modal-close" @click="closeModal">
         <img src="../assets/close.png" alt="" />
       </button>

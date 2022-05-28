@@ -1,9 +1,10 @@
 <template>
   <div class="container-fluid patrimonio-modal mt-sm-5 fixed-bottom d-flex">
     <div class="modal-container py-4 px-2">
-      <h3 class="modal-title">Qué entendemos por patrimonio cultural</h3>
+      <h3 class="modal-title">What do we Understand by Cultural Patrimony</h3>
       <hr />
-      <p class="pb-4 px-sm-4">
+      <h3>Sorry, but www.museopichilemuonline.cl still under construction...</h3>
+      <!-- <p class="pb-4 px-sm-4">
         El <strong>patrimonio cultural</strong> es un conjunto determinado de bienes tangibles,
         intangibles y naturales que forman parte de prácticas sociales, a los
         que se les atribuyen valores a ser transmitidos, y luego resignificados,
@@ -48,7 +49,7 @@
         <br />
 
         Fuente: Servicio Nacional del Patrimonio Cultural
-      </p>
+      </p> -->
       <button class="modal-close" @click="closeModal">
         <img src="../assets/close.png" alt="" />
       </button>

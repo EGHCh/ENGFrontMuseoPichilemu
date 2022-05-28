@@ -10,10 +10,10 @@
       </a>
       <div class="d-flex flex-column col-9 col-md-auto align-items-center">
         <p class="navbar__title text-start text-sm-center">
-          MUSEO <span>de</span> PICHILEMU EN LINEA
+          PICHILEMU<span>'s</span> MUSEUM ON LINE
         </p>
         <p class="navbar__url text-start col-12 text-sm-center">
-          www.museopichilemuenlinea.cl
+          www.museopichilemuonline.cl
         </p>
         <p
           class="navbar__punchline text-start me-md-5 me-lg-auto col-12 text-sm-center"
