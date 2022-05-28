@@ -27,7 +27,6 @@ import FooterComponent from "./components/footerComponent.vue";
 import FAB from "./components/FAB.vue";
 import ModalPatrimonio from "./components/ModalPatrimonio.vue";
 import ModalEditorial from "./components/ModalEditorial.vue";
-// import ModalCard from "./components/ModalCard.vue";
 
 //const baseURL =
 //  "http://wsgnoticias.byethost7.com/wp-json/wp/v2/posts?secciones=";
@@ -41,7 +40,6 @@ export default {
     FAB,
     ModalPatrimonio,
     ModalEditorial,
-    // ModalCard,
   },
   data() {
     return {

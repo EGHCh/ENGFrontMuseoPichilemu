@@ -29,7 +29,6 @@
     </div>
     <div
       @wheel="riseIndex"
-      @scroll="riseIndex"
       class="gallery__display container gallery__grid ms-3 ms-sm-auto"
     >
       <CardTemplate
@@ -38,8 +37,8 @@
         :cardTitle="post.title.rendered"
         :cardBody="post.contenido"
         :picture_src="post.imagen"
-        @click="getPost(post)"
       ></CardTemplate>
+        <!-- @click="getPost(post)" -->
     </div>
     <div
       class="gallery__selector gallery__selector--desktop gallery__selector--right d-flex flex-column mb-auto mt-auto"
@@ -64,7 +63,6 @@
 
 <script>
 import CardTemplate from "./card.vue";
-// import ModalCard from "./ModalCard.vue";
 import EditorialSection from "./editorialSection.vue";
 export default {
   name: "Gallery-section",
@@ -77,7 +75,6 @@ export default {
   components: {
     CardTemplate,
     EditorialSection,
-    // ModalCard,
   },
   props: {
     posts: Array,
@@ -90,9 +87,9 @@ export default {
     getChoice: function (choice) {
       this.$emit("update:choice", choice);
     },
-    getPost: function (post) {
-      this.post = post;
-    },
+    // getPost: function (post) {
+    //   this.post = post;
+    // },
   },
 };
 </script>
