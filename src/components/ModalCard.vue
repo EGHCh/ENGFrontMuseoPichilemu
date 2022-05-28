@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid card-modal mt-sm-5 fixed-bottom d-none">
+  <div class="container-fluid card-modal mt-sm-5 fixed-bottom">
     <div class="modal-container py-4 px-2">
       <img src="{{modalSRC}}" alt="" />
       <div>

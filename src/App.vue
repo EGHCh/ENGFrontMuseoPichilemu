@@ -13,6 +13,7 @@
     <GallerySection
       :posts="data"
       @update:choice="choiceUpdate"
+      @update:post="modalUpdateNShow"
     ></GallerySection>
     <FooterComponent></FooterComponent>
   </main>
@@ -26,6 +27,7 @@ import FooterComponent from "./components/footerComponent.vue";
 import FAB from "./components/FAB.vue";
 import ModalPatrimonio from "./components/ModalPatrimonio.vue";
 import ModalEditorial from "./components/ModalEditorial.vue";
+// import ModalCard from "./components/ModalCard.vue";
 
 //const baseURL =
 //  "http://wsgnoticias.byethost7.com/wp-json/wp/v2/posts?secciones=";
@@ -39,15 +41,20 @@ export default {
     FAB,
     ModalPatrimonio,
     ModalEditorial,
+    // ModalCard,
   },
   data() {
     return {
       data: [],
       choice: "",
+      postForModal: {},
+      showModal: null,
     };
   },
   mounted() {
-    axios.get("https://backendmuseopichilemu.com/wp-json/wp/v2/posts?per_page=40").then((data) => (this.data = data.data));
+    axios
+      .get("https://backendmuseopichilemu.com/wp-json/wp/v2/posts?per_page=40")
+      .then((data) => (this.data = data.data));
   },
   methods: {
     riseIndex: function () {
@@ -66,8 +73,19 @@ export default {
     },
     choiceUpdate: function (value) {
       console.log(value);
-      axios.get("https://backendmuseopichilemu.com/wp-json/wp/v2/posts?categories=" + value).then((resp) => this.data = resp.data).then(console.log(value.target)).catch(err => console.log(err));
+      axios
+        .get(
+          "https://backendmuseopichilemu.com/wp-json/wp/v2/posts?categories=" +
+            value
+        )
+        .then((resp) => (this.data = resp.data))
+        .then(console.log(value.target))
+        .catch((err) => console.log(err));
       // fetch("http://backendmuseopichilemu.com/wp-json/wp/v2/posts").then(response => response.json()).then(data => (this.data = data.data)).then(console.log(this.data))
+    },
+    modalUpdateNShow: function (post) {
+      this.postForModal = post;
+      console.log(this.postForModal);
     },
   },
 };

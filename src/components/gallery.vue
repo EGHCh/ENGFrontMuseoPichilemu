@@ -1,12 +1,18 @@
 <template>
   <EditorialSection class="sticky-top d-sm-none editorial-for-mobile pt-2" />
-  <!-- <div @click="consoleHoli"><p :v-for="(post, $index) in posts">{{$index}}</p></div> -->
-  <!-- <div>{{ posts }}</div> -->
+  <!-- <ModalCard
+    :modalSRC="post.imagen"
+    :modalTitle="post.title.rendered"
+    :modalBody="post.contenido"
+    class="d-none"
+  /> -->
   <section class="gallery container-fluid d-flex">
     <div
       class="gallery__selector fixed-left gallery__selector--desktop gallery__selector--left d-flex flex-column mx-auto"
     >
-      <a @click="getChoice(`2`)" value="2" class="text-center mb-1 mb-sm-0">A</a>
+      <a @click="getChoice(`2`)" value="2" class="text-center mb-1 mb-sm-0"
+        >A</a
+      >
       <a @click="getChoice(`17`)" class="text-center mb-1 mb-sm-0">B</a>
       <a @click="getChoice(``)" class="text-center mb-1 mb-sm-0">C</a>
       <a @click="getChoice(`66`)" class="text-center mb-1 mb-sm-0">D</a>
@@ -23,6 +29,7 @@
     </div>
     <div
       @wheel="riseIndex"
+      @scroll="riseIndex"
       class="gallery__display container gallery__grid ms-3 ms-sm-auto"
     >
       <CardTemplate
@@ -57,17 +64,20 @@
 
 <script>
 import CardTemplate from "./card.vue";
+// import ModalCard from "./ModalCard.vue";
 import EditorialSection from "./editorialSection.vue";
 export default {
   name: "Gallery-section",
   data() {
     return {
       choice: "",
+      post: {},
     };
   },
   components: {
     CardTemplate,
     EditorialSection,
+    // ModalCard,
   },
   props: {
     posts: Array,
@@ -81,7 +91,7 @@ export default {
       this.$emit("update:choice", choice);
     },
     getPost: function (post) {
-      this.$emit("update:modal", post);
+      this.post = post;
     },
   },
 };
