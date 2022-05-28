@@ -13,8 +13,8 @@
     <GallerySection
       :posts="data"
       @update:choice="choiceUpdate"
-      @update:post="modalUpdateNShow"
     ></GallerySection>
+      <!-- @update:post="modalUpdateNShow" -->
     <FooterComponent></FooterComponent>
   </main>
 </template>
@@ -81,10 +81,10 @@ export default {
         .catch((err) => console.log(err));
       // fetch("http://backendmuseopichilemu.com/wp-json/wp/v2/posts").then(response => response.json()).then(data => (this.data = data.data)).then(console.log(this.data))
     },
-    modalUpdateNShow: function (post) {
-      this.postForModal = post;
-      console.log(this.postForModal);
-    },
+    // modalUpdateNShow: function (post) {
+    //   this.postForModal = post;
+    //   console.log(this.postForModal);
+    // },
   },
 };
 </script>
