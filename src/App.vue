@@ -47,7 +47,7 @@ export default {
     };
   },
   mounted() {
-    axios.get("http://backendmuseopichilemu.com/wp-json/wp/v2/posts?per_page=40").then((data) => (this.data = data.data));
+    axios.get("https://backendmuseopichilemu.com/wp-json/wp/v2/posts?per_page=40").then((data) => (this.data = data.data));
   },
   methods: {
     riseIndex: function () {
@@ -66,7 +66,7 @@ export default {
     },
     choiceUpdate: function (value) {
       console.log(value);
-      axios.get("http://backendmuseopichilemu.com/wp-json/wp/v2/posts?categories=" + value).then((resp) => this.data = resp.data).then(console.log(value.target)).catch(err => console.log(err));
+      axios.get("https://backendmuseopichilemu.com/wp-json/wp/v2/posts?categories=" + value).then((resp) => this.data = resp.data).then(console.log(value.target)).catch(err => console.log(err));
       // fetch("http://backendmuseopichilemu.com/wp-json/wp/v2/posts").then(response => response.json()).then(data => (this.data = data.data)).then(console.log(this.data))
     },
   },
