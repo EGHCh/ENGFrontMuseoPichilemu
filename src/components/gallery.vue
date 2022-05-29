@@ -26,7 +26,7 @@
     <div @wheel="riseIndex" class="gallery__display container ms-3 ms-sm-auto">
       <div class="d-flex flex-column">
         <h2 class="mx-auto">
-          Sorry, but www.museopichilemuonline.cl still under construction...
+          Sorry, www.museopichilemuonline.cl still under construction...
         </h2>
         <img src="../assets/under.png" alt="" class="under-construction mx-auto" />
         <h3 class="mx-auto">
