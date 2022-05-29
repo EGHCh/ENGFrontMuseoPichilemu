@@ -1,7 +1,7 @@
 <template>
   <nav id="navbar" class="navbar navbar-light pb-0">
     <div class="container-fluid navbar__logo">
-      <a class="navbar-brand navbar-brand--left" href="museopichilemuenlinea.cl">
+      <a class="navbar-brand navbar-brand--left" href="https://museopichilemuenlinea.cl">
         <img
           src="../assets/logoMob.gif"
           alt=""
@@ -21,9 +21,9 @@
           Deuncuantohay
         </p>
       </div>
-      <a class="navbar-brand navbar-brand--right d-none d-lg-flex" href="museopichilemuonline.cl">
+      <a class="navbar-brand navbar-brand--right d-none d-lg-flex" href="https://museopichilemuonline.cl">
         <img
-          src="../assets/logo/01.png"
+          src="../assets/logoEng.gif"
           alt=""
           class="d-inline-block align-text-top"
         />
@@ -60,6 +60,7 @@ export default {
   top: 0;
   max-width: 200px;
   animation: logoGrow 1s ease;
+  z-index: -3;
 }
 .navbar-brand--right img {
   right: 0px;
