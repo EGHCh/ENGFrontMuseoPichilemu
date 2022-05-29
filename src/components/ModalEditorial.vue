@@ -3,7 +3,7 @@
     <div class="modal-container py-4 px-2">
       <h3 class="modal-title">EDITORIAL</h3>
       <hr />
-      <h3>Sorry, but www.museopichilemuonline.cl still under construction...</h3>
+      <h3>Sorry, www.museopichilemuonline.cl still under construction...</h3>
       <!-- <p class="pb-4 px-sm-4">
         Un museo (del latín, musēum y este, a su vez, del griego, Μουσείον) es
         una institución pública o privada, permanente, con o sin fines de lucro,

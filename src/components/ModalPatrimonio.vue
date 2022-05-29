@@ -3,7 +3,7 @@
     <div class="modal-container py-4 px-2">
       <h3 class="modal-title">What do we Understand by Cultural Patrimony</h3>
       <hr />
-      <h3>Sorry, but www.museopichilemuonline.cl still under construction...</h3>
+      <h3>Sorry, www.museopichilemuonline.cl still under construction...</h3>
       <!-- <p class="pb-4 px-sm-4">
         El <strong>patrimonio cultural</strong> es un conjunto determinado de bienes tangibles,
         intangibles y naturales que forman parte de prácticas sociales, a los
