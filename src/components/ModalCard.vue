@@ -2,9 +2,9 @@
   <div class="container-fluid card-modal mt-sm-5 fixed-bottom">
     <div class="bg-image">
       <img :src="modalSRC" class="img-fluid" />
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+      <div class="mask " style="background-color: rgba(0, 0, 0, 0.5)">
         <div class="text container-fluid d-flex flex-column">
-          <div>
+          <div class="overflow-scroll pt-2">
             <h3 class="modal-title">{{ modalTitle }}</h3>
             <hr />
             <p class="pb-4 px-sm-4">
@@ -94,6 +94,8 @@ export default {
 .card-modal .modal-close {
   border: none;
   background: rgba(0, 0, 0, 0);
+  /* position: absolute; */
+  bottom: -3rem;
 }
 /* CARD OVERLAY */
 .bg-image {
@@ -102,7 +104,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 70vh;
-  max-width: 80vw;
+  max-width: 90vw;
   border-radius: 10px;
 }
 
@@ -114,21 +116,26 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   color: #fff;
 }
 
 .bg-image .mask .text {
   height: 100%;
   display: flex !important;
-  align-items: space-around !important;
+  /* align-items: space-around !important; */
   justify-content: space-around !important;
 }
 
 .bg-image .mask .text p {
   margin: 0;
 }
-.bg-image .mask .text .modal-close {
-  marin-top: 10rem;
+
+@media (min-width: 400px) {
+  .card-modal .modal-close {
+    position: static;
+  }
+  .bg-image {
+      max-width: 90vw;
+  }
 }
 </style>
