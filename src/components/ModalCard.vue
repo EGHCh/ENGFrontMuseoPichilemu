@@ -1,16 +1,20 @@
 <template>
   <div class="container-fluid card-modal mt-sm-5 fixed-bottom">
-    <div class="modal-container py-4 px-2">
-      <img src="{{modalSRC}}" alt="" />
-      <div>
-        <h3 class="modal-title">{{ modalTitle }}</h3>
-        <hr />
-        <p class="pb-4 px-sm-4">
-          {{ modalBody }}
-        </p>
-        <button class="modal-close" @click="closeModal">
-          <img src="../assets/close.png" alt="" />
-        </button>
+    <div class="bg-image">
+      <img :src="modalSRC" class="img-fluid" />
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="text container-fluid d-flex flex-column">
+          <div>
+            <h3 class="modal-title">{{ modalTitle }}</h3>
+            <hr />
+            <p class="pb-4 px-sm-4">
+              {{ modalBody }}
+            </p>
+          </div>
+          <button class="modal-close" @click="closeModal">
+            <img src="../assets/close.png" alt="" />
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -41,29 +45,90 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: 1999;
+  display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
   font-family: "Roboto Mono", monospace;
 }
+.card-modal .card {
+}
+.card-modal .modal-img {
+  position: relative;
+  width: 100%;
+}
+.modal-img img {
+  border-radius: 0 0 10px 0;
+}
+.modal-container .body-container {
+  height: auto;
+}
+.body-container--background {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  top: auto;
+}
+.modal-container .card {
+  height: 70vh;
+}
 .card-modal .modal-container {
   height: 70vh;
-  width: 80vw;
-  max-width: 700px;
+  max-width: 80%;
+  border-radius: 10px;
   background-color: rgb(233, 138, 21);
   background-attachment: fixed;
+  overflow: hidden;
 }
 .card-modal .modal-title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 24px;
 }
 .card-modal .modal-container p {
-  max-height: 70%;
-  overflow: scroll;
+  /* max-height: 70%; */
+  font-size: 24px;
 }
 .card-modal .modal-close {
   border: none;
   background: rgba(0, 0, 0, 0);
+}
+/* CARD OVERLAY */
+.bg-image {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 70vh;
+  max-width: 80vw;
+  border-radius: 10px;
+}
+
+.bg-image .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+.bg-image .mask .text {
+  height: 100%;
+  display: flex !important;
+  align-items: space-around !important;
+  justify-content: space-around !important;
+}
+
+.bg-image .mask .text p {
+  margin: 0;
+}
+.bg-image .mask .text .modal-close {
+  marin-top: 10rem;
 }
 </style>

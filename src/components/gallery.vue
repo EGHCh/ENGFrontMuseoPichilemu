@@ -31,6 +31,7 @@
     </div>
     <div
       @wheel="riseIndex"
+      @scroll="riseIndex"
       class="gallery__display container gallery__grid ms-3 ms-sm-auto"
     >
       <CardTemplate
