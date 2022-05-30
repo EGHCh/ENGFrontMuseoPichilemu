@@ -8,7 +8,7 @@
           class="d-inline-block align-text-top"
         />
       </a>
-      <div class="d-flex flex-column col-9 col-md-auto align-items-center">
+      <div class="d-flex flex-column col-9 col-md-auto align-items-center navbar__text">
         <p class="navbar__title text-start text-sm-center">
           MUSEO <span>de</span> PICHILEMU EN LINEA
         </p>

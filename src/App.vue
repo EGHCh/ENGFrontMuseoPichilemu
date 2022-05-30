@@ -5,7 +5,7 @@
     <ModalEditorial class="d-none" />
     <!-- Site Body -->
     <NavbarComponent
-      @wheel="riseIndex"
+      @scroll="riseIndex"
       class="d-sm-none p-0 mb-0 mobile-navbar"
     />
     <FAB @click="backToTheNavbar" />

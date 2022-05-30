@@ -23,7 +23,7 @@
 <script>
 export default {
   name: "ModalCard",
-
+  emits: [],
   props: {
     modalSRC: String,
     modalTitle: String,
@@ -51,8 +51,7 @@ export default {
   justify-content: center;
   font-family: "Roboto Mono", monospace;
 }
-.card-modal .card {
-}
+
 .card-modal .modal-img {
   position: relative;
   width: 100%;

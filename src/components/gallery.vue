@@ -85,7 +85,7 @@ export default {
     posts: Array,
     selectCategory: Function,
   },
-  emits: ["update:choice", "update:modal"],
+  emits: ["update:choice"],
   setup() {},
   mounted() {},
   methods: {
@@ -94,6 +94,8 @@ export default {
     },
     getPost: function (post) {
       this.post = post;
+      document.querySelector(".card-modal").classList.add("d-flex");
+      document.querySelector(".card-modal").classList.remove("d-none");
     },
   },
 };
