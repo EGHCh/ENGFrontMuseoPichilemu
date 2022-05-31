@@ -1,13 +1,13 @@
 <template>
   <EditorialSection class="sticky-top d-sm-none editorial-for-mobile pt-2" />
-  <div v-if="post.contenido">
+  <!-- <div v-if="post.contenido">
     <ModalCard
       :modalSRC="post.imagen"
       :modalTitle="post.title.rendered"
       :modalBody="post.contenido"
       class=""
     />
-  </div>
+  </div> -->
   <section class="gallery container-fluid d-flex">
     <div
       class="gallery__selector fixed-left gallery__selector--desktop gallery__selector--left d-flex flex-column mx-auto"
@@ -67,7 +67,7 @@
 <script>
 import CardTemplate from "./card.vue";
 import EditorialSection from "./editorialSection.vue";
-import ModalCard from "./ModalCard.vue";
+// import ModalCard from "./ModalCard.vue";
 export default {
   name: "Gallery-section",
   data() {
@@ -79,13 +79,13 @@ export default {
   components: {
     CardTemplate,
     EditorialSection,
-    ModalCard,
+    // ModalCard,
   },
   props: {
     posts: Array,
     selectCategory: Function,
   },
-  emits: ["update:choice"],
+  emits: ["update:choice", "update:modal"],
   setup() {},
   mounted() {},
   methods: {
@@ -94,8 +94,9 @@ export default {
     },
     getPost: function (post) {
       this.post = post;
-      document.querySelector(".card-modal").classList.add("d-flex");
-      document.querySelector(".card-modal").classList.remove("d-none");
+      this.$emit("update:modal", post);
+      // document.querySelector(".card-modal").classList.add("d-flex");
+      // document.querySelector(".card-modal").classList.remove("d-none");
     },
   },
 };

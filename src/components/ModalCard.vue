@@ -46,7 +46,7 @@ export default {
   height: 100vh;
   z-index: 1999;
   position: relative;
-  top: -7%;
+  /* top: -7%; */
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
@@ -104,13 +104,13 @@ export default {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 80vh;
+  max-height: 70vh;
   max-width: 90vw;
   border-radius: 10px;
 }
 
 .bg-image img {
-  max-height: 80vh;
+  max-height: 70vh;
   max-width: 90vw;
 }
 
