@@ -3,6 +3,13 @@
     <!-- Modals -->
     <ModalPatrimonio class="d-none" />
     <ModalEditorial class="d-none" />
+    <div v-if="post.contenido">
+      <ModalCard
+        :modalSRC="post.imagen"
+        :modalTitle="post.title.rendered"
+        :modalBody="post.contenido"
+      />
+    </div>
     <!-- Site Body -->
     <!-- <NavbarComponent
       @scroll="riseIndex"
@@ -10,21 +17,15 @@
     >
     </NavbarComponent> -->
     <FAB @click="backToTheNavbar" />
-    <NavbarMobile class="d-sm-none" @rise:index="riseIndex" />
+    <NavbarMobile class="d-sm-none"
+      @rise:index="riseIndex"
+     />
     <NavbarComponent class="fixed-top d-none d-sm-flex" />
     <GallerySection
       :posts="data"
       @update:modal="modalUpdate"
       @update:choice="choiceUpdate"
-    >
-    </GallerySection>
-      <div v-if="post.contenido" class="position-absolute">
-        <ModalCard
-          :modalSRC="post.imagen"
-          :modalTitle="post.title.rendered"
-          :modalBody="post.contenido"
-        />
-      </div>
+    ></GallerySection>
     <!-- @update:post="modalUpdateNShow" -->
     <FooterComponent></FooterComponent>
   </main>
@@ -33,7 +34,7 @@
 <script>
 import axios from "axios";
 import NavbarComponent from "./components/navbar.vue";
-import NavbarMobile from "./components/NavbarMobile.vue";
+import NavbarMobile from './components/NavbarMobile.vue';
 import GallerySection from "./components/gallery.vue";
 import FooterComponent from "./components/footerComponent.vue";
 import FAB from "./components/FAB.vue";
@@ -126,7 +127,7 @@ export default {
 @keyframes riseGallery {
   from {
     height: 30vh;
-    opacity: 0.5;
+    opacity: .5;
   }
   to {
     height: 0vh;
