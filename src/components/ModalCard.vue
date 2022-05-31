@@ -12,7 +12,7 @@
             </p>
           </div>
           <button class="modal-close" @click="closeModal">
-            <img src="../assets/close.png" alt="" />
+            <img src="../assets/closeCard.png" alt="" />
           </button>
         </div>
       </div>
@@ -45,6 +45,8 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: 1999;
+  position: relative;
+  top: -7%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
@@ -102,9 +104,14 @@ export default {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 70vh;
+  max-height: 80vh;
   max-width: 90vw;
   border-radius: 10px;
+}
+
+.bg-image img {
+  max-height: 80vh;
+  max-width: 90vw;
 }
 
 .bg-image .mask {
@@ -122,7 +129,7 @@ export default {
   height: 100%;
   display: flex !important;
   /* align-items: space-around !important; */
-  justify-content: space-around !important;
+  justify-content: end !important;
 }
 
 .bg-image .mask .text p {

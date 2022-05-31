@@ -7,14 +7,16 @@
     <NavbarComponent
       @scroll="riseIndex"
       class="d-sm-none p-0 mb-0 mobile-navbar"
-    />
+    >
+
+    </NavbarComponent>
     <FAB @click="backToTheNavbar" />
     <NavbarComponent class="fixed-top d-none d-sm-flex" />
     <GallerySection
       :posts="data"
       @update:choice="choiceUpdate"
     ></GallerySection>
-      <!-- @update:post="modalUpdateNShow" -->
+    <!-- @update:post="modalUpdateNShow" -->
     <FooterComponent></FooterComponent>
   </main>
 </template>
@@ -109,4 +111,3 @@ export default {
   }
 }
 </style>
-  
