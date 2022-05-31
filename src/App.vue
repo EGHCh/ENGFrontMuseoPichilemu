@@ -3,8 +3,8 @@
     <!-- Modals -->
     <ModalPatrimonio class="d-none" />
     <ModalEditorial class="d-none" />
-    <div v-if="post.contenido">
-      <ModalCard class="fixed-top"
+    <div v-if="post.contenido" class="fixed-top">
+      <ModalCard 
         :modalSRC="post.imagen"
         :modalTitle="post.title.rendered"
         :modalBody="post.contenido"
