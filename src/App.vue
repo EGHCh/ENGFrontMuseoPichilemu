@@ -17,7 +17,7 @@
     >
     </NavbarComponent> -->
     <FAB @click="backToTheNavbar" />
-    <NavbarMobile
+    <NavbarMobile class="d-sm-none"
       @rise:index="riseIndex"
      />
     <NavbarComponent class="fixed-top d-none d-sm-flex" />
