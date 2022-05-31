@@ -4,7 +4,7 @@
     <ModalPatrimonio class="d-none" />
     <ModalEditorial class="d-none" />
     <div v-if="post.contenido">
-      <ModalCard
+      <ModalCard class="fixed-top"
         :modalSRC="post.imagen"
         :modalTitle="post.title.rendered"
         :modalBody="post.contenido"
