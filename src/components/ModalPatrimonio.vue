@@ -1,55 +1,53 @@
 <template>
   <div class="container-fluid patrimonio-modal mt-sm-5 fixed-bottom d-flex">
     <div class="modal-container py-4 px-2">
-      <h3 class="modal-title">What do we Understand by Cultural Patrimony</h3>
+      <h3 class="modal-title mt-2">What do we understand by cultural heritage?</h3>
       <hr />
-      <h3>Sorry, www.museopichilemuonline.cl still under construction...</h3>
-      <!-- <p class="pb-4 px-sm-4">
-        El <strong>patrimonio cultural</strong> es un conjunto determinado de bienes tangibles,
-        intangibles y naturales que forman parte de prácticas sociales, a los
-        que se les atribuyen valores a ser transmitidos, y luego resignificados,
-        de una época a otra, o de una generación a las siguientes. Así, un
-        objeto se transforma en patrimonio o bien cultural, o deja de serlo,
-        mediante un proceso y/o cuando alguien -individuo o colectividad-,
-        afirma su nueva condición (Dibam, Memoria, cultura y creación.
-        Lineamientos políticos. Documento, Santiago, 2005).
+      <p class="pb-4 px-sm-4">
+        <strong>Cultural heritage</strong> is a certain set of tangible,
+        intangible and natural assets that are part of social practices, to
+        which values are attributed to be transmitted, and then resignified,
+        from one era to the next, or from one generation to the next. Thus, an
+        object is transformed into a heritage or cultural asset, or ceases to
+        be, through a process and/or when someone - individual or collectivity -
+        affirms its new condition (Dibam, Memory, culture and creation.
+        Political guidelines. Document, Santiago, 2005).
         <br />
         <br />
-        El hecho de que el patrimonio cultural se conforme a partir de un
-        proceso social y cultural de atribución de valores, funciones y
-        significados, implica que no constituye algo dado de una vez y para
-        siempre sino, más bien, es <strong>el producto de un proceso social permanente,
-        complejo y polémico, de construcción de significados y sentidos.</strong> Así,
-        los objetos y bienes resguardados adquieren razón de ser en la medida
-        que se abren a nuevos sentidos y se asocian a una cultura presente que
-        los contextualiza, los recrea e interpreta de manera dinámica.
+        he fact that cultural heritage is conformed from a social and cultural
+        process of attribution of values, functions and meanings, implies that
+        it is not something given once and for all but, rather, it is the
+        product of a permanent, complex and controversial social process, with
+        mixed feelings and meanings. Thus, the protected objects and assets
+        acquire reason for being to the extent that they open up to new meanings
+        and are associated with a present culture that contextualizes, recreates
+        and interprets them in a dynamic way.
         <br />
         <br />
-        El valor de dichos bienes y manifestaciones culturales no está en un
-        pasado rescatado de modo fiel, sino en la relación que en el presente
-        establecen las personas y las sociedades, con dichas huellas y
-        testimonios. Por ello, los ciudadanos no son meros receptores pasivos
-        sino sujetos que conocen y transforman esa realidad, posibilitando el
-        surgimiento de nuevas interpretaciones y usos patrimoniales. Como la
-        UNESCO ha subrayado, el término "patrimonio cultural" no siempre ha
-        tenido el mismo significado, y en las últimas décadas ha experimentado
-        un profundo cambio. Actualmente, ésta es una noción más abierta que
-        también incluye expresiones de la cultura presente, y no sólo del
-        pasado.
+        The value of these cultural goods and manifestations is not in a
+        faithfully rescued past, but in the relationship that people and
+        societies establish in the present, with such traces and testimonies.
+        Therefore, citizens are not mere passive recipients but subjects who
+        know and transform that reality, making possible the emergence of new
+        interpretations and patrimonial uses. As UNESCO has stressed, the term
+        "cultural heritage" has not always had the same meaning, and in recent
+        decades it has undergone a profound change. Today, this is a more open
+        notion that also includes expressions of the present culture, and not
+        only of the past.
         <br />
         <br />
-        Por otra parte, si en un momento dicho concepto estuvo referido
-        exclusivamente a los monumentos, ahora ha ido incorporando,
-        gradualmente, nuevas categorías tales como las de patrimonio intangible,
-        etnográfico o industrial, las que, a su vez, han demandado nuevos
-        esfuerzos de conceptualización. Junto con ello se ha otorgado mayor
-        atención a las artes de la representación, lenguas y música tradicional,
-        así como a los sistemas filosóficos, espirituales y de información que
-        constituyen el marco de dichas creaciones.
-        <br />
+        On the other hand, if at one point this concept was referred exclusively
+        to monuments, it has now gradually incorporated new categories such as
+        those of intangible, ethnographic or industrial heritage, which, in
+        turn, have required new conceptualization efforts. Along with this,
+        greater attention has been given to the arts of representation,
+        languages and traditional music, as well as to the philosophical,
+        spiritual and information systems that constitute the framework of these
+        creations.
 
-        Fuente: Servicio Nacional del Patrimonio Cultural
-      </p> -->
+        <br />
+        Source: National Cultural Heritage Service
+      </p>
       <button class="modal-close" @click="closeModal">
         <img src="../assets/close.png" alt="" />
       </button>

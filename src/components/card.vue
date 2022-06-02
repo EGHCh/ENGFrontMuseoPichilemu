@@ -10,20 +10,14 @@
       </div>
     </div>
   </div>
-  <ModalCard
-    :modalSRC="picture_src"
-    :modalTitle="cardTitle"
-    :modalBody="cardBody"
-  />
+  
 </template>
 
 <script>
-import ModalCard from "./ModalCard.vue";
 
 export default {
   name: "cardTemplate",
   components: {
-    ModalCard,
   },
   props: {
     picture_src: String,

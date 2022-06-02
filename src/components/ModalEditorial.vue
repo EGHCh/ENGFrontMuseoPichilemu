@@ -3,48 +3,46 @@
     <div class="modal-container py-4 px-2">
       <h3 class="modal-title">EDITORIAL</h3>
       <hr />
-      <h3>Sorry, www.museopichilemuonline.cl still under construction...</h3>
-      <!-- <p class="pb-4 px-sm-4">
-        Un museo (del latín, musēum y este, a su vez, del griego, Μουσείον) es
-        una institución pública o privada, permanente, con o sin fines de lucro,
-        al servicio de la sociedad y de su desarrollo, y abierta al público, que
-        adquiere, conserva, investiga, comunica, expone o exhibe, con propósitos
-        de estudio y educación, colecciones de arte, científicas, entre otros,
-        siempre con un valor cultural, según el Consejo Internacional de Museos
-        (ICOM).2 La ciencia que los estudia se denomina museología, la técnica
-        de su gestión museografía y la administración de los mismos, museonomía.
-        <br/>
-        <br/>
-        Los museos exponen colecciones, es decir, conjuntos de objetos e
-        información que reflejan algún aspecto de la existencia humana o su
-        entorno. Este tipo de colecciones, casi siempre valiosas, existen desde
-        la Antigüedad: en los templos se guardaban objetos de culto u ofrendas
-        que de vez en cuando se exhibían al público para que pudiera
-        contemplarlos y admirarlos. Lo mismo ocurría con los objetos valiosos y
-        obras de arte que coleccionaban algunas personas de la aristocracia en
-        Grecia y en Roma; los tenían expuestos en sus casas, en sus jardines y
-        los enseñaban con orgullo a los amigos y visitantes. Fue en el
-        Renacimiento cuando se dio el nombre de "museo" tal y como hoy se
-        entiende a los edificios expresamente dedicados la conservación y
-        exposición de sus colecciones permanentes. Por otra parte están las
-        galerías de arte, donde se muestran pinturas y esculturas, en
-        exposiciones temporales, sin que necesariamente posean colecciones
-        permanentes. Su nombre deriva de las galerías (de los palacios y
-        castillos), que eran los espaciosos vestíbulos de forma alargada, con
-        muchas ventanas o abiertos y sostenidos por columnas o pilares,
-        destinados a los momentos de descanso y a la exhibición de objetos de
-        adorno, muchas veces obras de arte.
-        <br/>
-        <br/>
-        Después de la Primera Guerra Mundial
-        (1918) surgió la Oficina Internacional de Museos, que articuló los
-        criterios museográficos cuyos programas y soluciones técnicas son
-        vigentes hoy en día. En 1945 nació el Consejo Internacional de Museos
-        (ICOM, por sus siglas en inglés) y en 1948 aparece la publicación
-        periódica Museum mediante la cual se difunden hasta hoy en día las
-        actividades de los museos en el mundo. (Fuente: Párrafos de la
-        descripción de Wikipedia..).
-      </p> -->
+      <p class="px-4 mt-2 px-sm-4">
+        A museum (from Latin, musēum and this, in turn, from the Greek,
+        Μουσείον) is a public or private institution, permanent, for profit or
+        non-profit, at the service of society and its development, and open to
+        the public, which acquires, preserves, researches, communicates,
+        exhibits, for study and educational purposes, collections of art,
+        scientific, among others, always with cultural value, according to the
+        International Council of Museums (ICOM).2 The science that studies them
+        is called museology, the technique of their management museography and
+        their administration, museonomy.
+        <br />
+        <br />
+        Museums exhibit collections, that is, sets of objects and information
+        that reflect some aspect of human existence or its environment. These
+        types of collections, almost always valuable, have existed since ancient
+        times: objects of worship or offerings were kept in temples that from
+        time to time were exhibited to the public so that they could contemplate
+        and admire them. The same thing happened with the valuable objects and
+        works of art collected by some people of the aristocracy in Greece and
+        Rome; they had them exposed in their homes, in their gardens and proudly
+        taught them to friends and visitors. It was in the Renaissance when the
+        name of "museum" was given as it is understood today to buildings
+        expressly dedicated to the conservation and exhibition of their
+        permanent collections. On the other hand, there are art galleries, where
+        paintings and sculptures are shown, in temporary exhibitions, without
+        necessarily having permanent collections. Its name derives from the
+        galleries (of palaces and castles), which were the spacious lobbies with
+        an elongated shape, with many windows or open and supported by columns
+        or pillars, intended for moments of rest and the exhibition of
+        ornamental objects, often works of art.
+        <br />
+        <br />
+        After World War I (1918), the International Museum Office emerged, which
+        articulated the museographic criteria whose programs and technical
+        solutions are in force today. In 1945 the International Council of
+        Museums (ICOM) was born and in 1948 the periodical Museum appears
+        through which the activities of museums around the world are
+        disseminated to this day. (Source: Paragraphs of the description of
+        Wikipedia..).
+      </p>
       <button class="modal-close" @click="closeModal">
         <img src="../assets/close.png" alt="" />
       </button>

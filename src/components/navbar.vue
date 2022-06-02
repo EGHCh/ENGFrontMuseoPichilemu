@@ -1,14 +1,14 @@
 <template>
   <nav id="navbar" class="navbar navbar-light pb-0">
     <div class="container-fluid navbar__logo">
-      <a class="navbar-brand navbar-brand--left" href="https://www.museopichilemuenlinea.cl">
+      <a class="navbar-brand navbar-brand--left" href="https://museopichilemuenlinea.cl">
         <img
           src="../assets/logoEng.gif"
           alt=""
           class="d-inline-block align-text-top"
         />
       </a>
-      <div class="d-flex flex-column col-9 col-md-auto align-items-center">
+      <div class="d-flex flex-column col-9 col-md-auto align-items-center navbar__text">
         <p class="navbar__title text-start text-sm-center">
           PICHILEMU<span>'s</span> MUSEUM ON LINE
         </p>
@@ -21,7 +21,7 @@
           Deuncuantohay
         </p>
       </div>
-      <a class="navbar-brand navbar-brand--right d-none d-lg-flex" href="https://www.museopichilemuenlinea.cl">
+      <a class="navbar-brand navbar-brand--right d-none d-lg-flex" href="https://museopichilemuenlinea.cl">
         <img
           src="../assets/logoMob.gif"
           alt=""
@@ -47,10 +47,10 @@ export default {
 
 <style>
 .navbar {
+  width: 100%;
   font-family: "Old Standard TT", serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   background-image: url(https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80);
-  z-index: 2;
 }
 .navbar .navbar-brand {
   height: 10px;
@@ -60,6 +60,7 @@ export default {
   top: 0;
   max-width: 200px;
   animation: logoGrow 1s ease;
+  z-index: -3;
 }
 .navbar-brand--right img {
   right: 0px;
