@@ -6,8 +6,8 @@
     <div v-if="post.contenido" class="fixed-bottom">
       <ModalCard
         :modalSRC="post.imagen"
-        :modalTitle="post.title.rendered"
-        :modalBody="post.contenido"
+        :modalTitle="post.eng_title"
+        :modalBody="post.eng_content"
       />
     </div>
     <!-- Site Body -->

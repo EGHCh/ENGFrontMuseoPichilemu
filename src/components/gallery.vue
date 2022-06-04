@@ -3,8 +3,8 @@
   <!-- <div v-if="post.contenido">
     <ModalCard
       :modalSRC="post.imagen"
-      :modalTitle="post.title.rendered"
-      :modalBody="post.contenido"
+      :modalTitle="post.eng_title"
+      :modalBody="post.eng_content"
       class=""
     />
   </div> -->
@@ -32,7 +32,7 @@
       @scroll="riseIndex"
       class="gallery__display container gallery__grid ms-3 ms-sm-auto"
     >
-      <div class="d-flex flex-column">
+      <!-- <div class="d-flex flex-column">
         <h2 class="mx-auto">
           Sorry, www.museopichilemuonline.cl still under construction...
         </h2>
@@ -47,15 +47,15 @@
             >www.museopichilemuonline.cl</a
           >
         </h3>
-      </div>
-      <!-- <CardTemplate
+      </div> -->
+      <CardTemplate
         v-for="(post, index) in posts"
         :key="index"
-        :cardTitle="post.title.rendered"
-        :cardBody="post.contenido"
+        :cardTitle="post.eng_title"
+        :cardBody="post.eng_content"
         :picture_src="post.imagen"
         @click="getPost(post)"
-      ></CardTemplate> -->
+      ></CardTemplate>
     </div>
     <div
       class="gallery__selector gallery__selector--desktop gallery__selector--right d-flex flex-column mb-auto mt-auto"
@@ -79,7 +79,7 @@
 </template>
 
 <script>
-// import CardTemplate from "./card.vue";
+import CardTemplate from "./card.vue";
 import EditorialSection from "./editorialSection.vue";
 // import ModalCard from "./ModalCard.vue";
 export default {
@@ -91,7 +91,7 @@ export default {
     };
   },
   components: {
-    // CardTemplate,
+    CardTemplate,
     EditorialSection,
     // ModalCard,
   },
