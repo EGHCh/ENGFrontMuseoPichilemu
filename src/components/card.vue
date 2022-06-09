@@ -10,15 +10,12 @@
       </div>
     </div>
   </div>
-  
 </template>
 
 <script>
-
 export default {
   name: "cardTemplate",
-  components: {
-  },
+  components: {},
   props: {
     picture_src: String,
     cardTitle: String,
@@ -34,19 +31,17 @@ export default {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 .card .card-img-top {
   height: 50%;
   object-fit: cover;
   object-position: 0% 15%;
-
 }
 .card .card-body {
   font-family: "Roboto Mono", monospace;
   max-height: 55%;
   background-color: rgba(233, 138, 21, 0.5);
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card .card-title {
   font-size: 25px;
@@ -55,11 +50,12 @@ export default {
 .card .card-text {
   font-size: 14px;
   line-height: 18px;
-  height: 11ch;
+  height: 110px;
+  display: -webkit-box;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
-
 @media (min-width: 400px) {
   .card {
     width: 18rem;
